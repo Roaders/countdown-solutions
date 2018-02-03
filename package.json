@@ -1,0 +1,27 @@
+{
+    "name": "countdown-solutions",
+    "version": "1.0.0",
+    "description": "A node util to find countdown solutions",
+    "scripts": {
+        "build": "tsc",
+        "prestart": "npm run build",
+        "start": "node dist/index.js"
+    },
+    "bin": {
+        "countdown": "./dist/index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Roaders/countdown-solutions.git"
+    },
+    "author": "",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/Roaders/countdown-solutions/issues"
+    },
+    "homepage": "https://github.com/Roaders/countdown-solutions#readme",
+    "devDependencies": {
+        "@types/node": "^9.4.0",
+        "typescript": "^2.7.1"
+    }
+}
