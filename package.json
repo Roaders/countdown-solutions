@@ -1,6 +1,6 @@
 {
     "name": "countdown-solutions",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "A node util to find countdown solutions",
     "scripts": {
         "build": "tsc",
