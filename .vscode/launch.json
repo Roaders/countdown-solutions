@@ -12,8 +12,7 @@
             "program": "${workspaceFolder}\\dist\\index.js",
             "internalConsoleOptions": "openOnSessionStart",
             "args": [
-                "egamifseo",
-                "images"
+                "dirtybash"
             ]
         }
     ]
