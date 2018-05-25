@@ -24,7 +24,7 @@ else {
     words = fs.readFileSync(wordsPath).toString().split("\r\n");
 }
 
-console.log(`Searching for solutions to: '${conundrum}'...`);
+console.log(`Searching ${words.length.toLocaleString()} words for solutions to: '${conundrum}'...`);
 
 const conundrumCounts = buildLetterCounts(conundrum.toLowerCase());
 

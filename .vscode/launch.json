@@ -14,6 +14,17 @@
             "args": [
                 "dirtybash"
             ]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Create Word List",
+            "preLaunchTask": "buildApp",
+            "program": "${workspaceFolder}\\dist\\createWordLists.js",
+            "internalConsoleOptions": "openOnSessionStart",
+            "args": [
+                "dirtybash"
+            ]
         }
     ]
 }
