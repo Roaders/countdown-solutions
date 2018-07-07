@@ -4,8 +4,22 @@ import * as fs from "fs";
 import * as path from "path";
 
 import { buildLetterCounts, testWord, compareWordLength } from "./util/wordUtil"
+import { solve } from "./util/numbersUtil";
 
 const conundrum = process.argv[2];
+
+const numbersRegExp = /[\d,]/
+const targetRegExp = /[\d]/
+
+if(numbersRegExp.test(process.argv[2]) && targetRegExp.test(process.argv[3])){
+    const numbers = process.argv[2].split(",")
+        .map(number => parseInt(number));
+    const target = parseInt(process.argv[3]);
+
+    solve(numbers, target );
+    
+    process.exit();
+}
 
 if (conundrum == null) {
     console.log(`No conundrum supplied, exiting`);

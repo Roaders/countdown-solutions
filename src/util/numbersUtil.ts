@@ -1,7 +1,16 @@
 
 import { operators, operatee, solution, operationLookup } from "./operators"
 
-function generateSolutions(numbers: number[], target: number): solution[] {
+export function solve(numbers: number[], target: number){
+
+    console.log(`Finding solution to '${target}' with '${numbers}'`)
+
+    const solutions = generateSolutions(numbers);
+
+    console.log(`${solutions.length} solutions generated`);
+}
+
+function generateSolutions(numbers: number[]): solution[] {
 
     return numbers.reduce<solution[]>((solutions, number, index) => {
         const remainingNumbers = numbers.splice(index, 1);

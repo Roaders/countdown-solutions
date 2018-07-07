@@ -54,6 +54,7 @@ export interface solution{
     values: operatee[];
     operator: operator;
     result: number;
+    toString: () => string;
 }
 
 export type operatee = solution | number;

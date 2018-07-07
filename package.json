@@ -5,7 +5,9 @@
     "scripts": {
         "build": "tsc",
         "prestart": "npm run build",
+        "prestartNumbers": "npm run build",
         "start": "node dist/index.js",
+        "startNumbers": "node dist/index.js 75,9,6,6,4,2 846",
         "prepublishOnly": "npm run build"
     },
     "bin": {
